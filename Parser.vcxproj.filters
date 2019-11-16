@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lex_parser">
+      <UniqueIdentifier>{619acee9-faf2-481f-aaef-f350d25cfa6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syntax_parser">
+      <UniqueIdentifier>{b08eab9c-55f7-4fab-864d-5f59996b36eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{be49d540-cf2d-47bd-affb-137142cae175}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Token.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParser.cpp">
+      <Filter>lex_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Grammar.cpp">
+      <Filter>syntax_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisTable.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Token.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenType.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="LexParser.h">
+      <Filter>lex_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Grammar.h">
+      <Filter>syntax_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisTable.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="README.syntax.md">
+      <Filter>syntax_parser</Filter>
+    </None>
+    <None Include="test.sml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Parser.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
